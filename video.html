@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+</style>
+<body>
+    <div class="main">
+        <video src="./501185472866078's2025-3-9-20.39.627 story.mp4" loop preload="loop" autoplay muted playsinline></video>
+    </div>
+    
+</body>
+</html>
+
+const convo = document.querySelector('.convo');
+convo.addEventListener('mouseenter', () => {
+    main.style.backgroundImage = "url('./convopic.jpg')";
+});
+convo.addEventListener('mouseleave', () => {
+    main.style.backgroundImage = "url('./customediv_img.jpg')";
+});
+
+const bus = document.querySelector('.bus');
+bus.addEventListener('mouseenter', () => {
+    main.style.backgroundImage = "url('./bus.jpg')";
+});
+bus.addEventListener('mouseleave', () => {
+    main.style.backgroundImage = "url('./customediv_img.jpg')";
+    
+});

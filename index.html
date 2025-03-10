@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Fees and Program Details</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: center; /*changed*/
+        }
+        th{
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center; /*changed*/
+        }
+        th {
+            background-color: #4CAF50; /* Header background color */
+            color: white;              /* Header text color */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Row background color for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* Row background color for odd rows */
+        }
+        td {
+            color: #333333;             /* Text color for table cells */
+        }
+        h1, h2 {
+            color: #333333;             /* Text color for headings */
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 774px) {
+            table, thead, tbody, th, td, tr {
+            display: block;
+            text-align: center;
+            }
+
+            thead tr {
+            display: none;
+            
+            }
+          
+            tr {
+            margin-bottom: 30px;
+            }
+            td {
+            text-align: right;
+            padding-left: 45%;
+            padding-right: 10px; /* Added space on the right */
+            position: relative;
+            }
+            td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: bold;
+            text-align: left;
+            }
+            td[data-label="Total Cost with Admission & Other Fees"] {
+            height: 60px; 
+            }
+            td[data-label=" Duration (Semesters)"] {
+             padding: 10px;
+            }
+           
+            td[data-label="Department"] {
+            background-color: #4CAF50;
+            color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Faculty of Business Administration -->
+    
+    <h4>Faculty of Business Administration</h4>
+    <table>
+        <thead>
+            <tr class="padding:5px;">
+                <th>Department</th>
+                <th>Program</th>
+                <th>Total Credit Hours</th>
+                <th>Duration (Years)</th>
+                <th>Duration (Semesters)</th>
+                <th>Per Credit Cost</th>
+                <th>Total Tuition Fee</th>
+                <th>Total Cost with Admission & Other Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">BBA (Hon's)</td>
+                <td data-label="Total Credit Hours">132</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,860</td>
+                <td data-label="Total Tuition Fee">377,520</td>
+                <td data-label="Total Cost with Admission & Other Fees">400,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">HTM (Hon's)</td>
+                <td data-label="Total Credit Hours">132</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,860</td>
+                <td data-label="Total Tuition Fee">377,520</td>
+                <td data-label="Total Cost with Admission & Other Fees">415,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">MBA (Regular)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1</td>
+                <td data-label="Duration (Semesters)">2</td>
+                <td data-label="Per Credit Cost">1,950</td>
+                <td data-label="Total Tuition Fee">78,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">94,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">MBA (Regular)</td>
+                <td data-label="Total Credit Hours">49</td>
+                <td data-label="Duration (Years)">1.6</td>
+                <td data-label="Duration (Semesters)">3</td>
+                <td data-label="Per Credit Cost">1,950</td>
+                <td data-label="Total Tuition Fee">95,550</td>
+                <td data-label="Total Cost with Admission & Other Fees">117,950</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">MBA (2 Year)</td>
+                <td data-label="Total Credit Hours">60</td>
+                <td data-label="Duration (Years)">2</td>
+                <td data-label="Duration (Semesters)">4</td>
+                <td data-label="Per Credit Cost">1,950</td>
+                <td data-label="Total Tuition Fee">117,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">135,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Business Administration</td>
+                <td data-label="Program">Executive MBA</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1.6</td>
+                <td data-label="Duration (Semesters)">3</td>
+                <td data-label="Per Credit Cost">1,950</td>
+                <td data-label="Total Tuition Fee">78,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">95,190</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Faculty of Arts, Law & Social Sciences -->
+    <h4>Faculty of Arts, Law & Social Sciences</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Program</th>
+                <th>Total Credit Hours</th>
+                <th>Duration (Years)</th>
+                <th>Duration (Semesters)</th>
+                <th>Per Credit Cost</th>
+                <th>Total Tuition Fee</th>
+                <th>Total Cost with Admission & Other Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Department">English</td>
+                <td data-label="Program">BA in English</td>
+                <td data-label="Total Credit Hours">132</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,000</td>
+                <td data-label="Total Tuition Fee">264,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">288,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">English</td>
+                <td data-label="Program">MA in English (1 Year)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1</td>
+                <td data-label="Duration (Semesters)">2</td>
+                <td data-label="Per Credit Cost">1,500</td>
+                <td data-label="Total Tuition Fee">60,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">76,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">English</td>
+                <td data-label="Program">MA in English (2 Years)</td>
+                <td data-label="Total Credit Hours">60</td>
+                <td data-label="Duration (Years)">2</td>
+                <td data-label="Duration (Semesters)">4</td>
+                <td data-label="Per Credit Cost">1,500</td>
+                <td data-label="Total Tuition Fee">90,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">118,700</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Law</td>
+                <td data-label="Program">LLB (Hon's)</td>
+                <td data-label="Total Credit Hours">132</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,900</td>
+                <td data-label="Total Tuition Fee">382,800</td>
+                <td data-label="Total Cost with Admission & Other Fees">405,900</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Law</td>
+                <td data-label="Program">LLM (1 Year)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1</td>
+                <td data-label="Duration (Semesters)">2</td>
+                <td data-label="Per Credit Cost">1,500</td>
+                <td data-label="Total Tuition Fee">60,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">80,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Law</td>
+                <td data-label="Program">LLM (2 Years)</td>
+                <td data-label="Total Credit Hours">60</td>
+                <td data-label="Duration (Years)">2</td>
+                <td data-label="Duration (Semesters)">4</td>
+                <td data-label="Per Credit Cost">1,500</td>
+                <td data-label="Total Tuition Fee">91,500</td>
+                <td data-label="Total Cost with Admission & Other Fees">110,000</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Islamic Studies</td>
+                <td data-label="Program">BA in Islamic Studies</td>
+                <td data-label="Total Credit Hours">130</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">1,200</td>
+                <td data-label="Total Tuition Fee">156,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">175,000</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Islamic Studies</td>
+                <td data-label="Program">MA in IS (1 Year)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1</td>
+                <td data-label="Duration (Semesters)">2</td>
+                <td data-label="Per Credit Cost">1,000</td>
+                <td data-label="Total Tuition Fee">40,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">58,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Islamic Studies</td>
+                <td data-label="Program">MA in IS (2 Years)</td>
+                <td data-label="Total Credit Hours">60</td>
+                <td data-label="Duration (Years)">2</td>
+                <td data-label="Duration (Semesters)">4</td>
+                <td data-label="Per Credit Cost">1,000</td>
+                <td data-label="Total Tuition Fee">60,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">78,500</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Faculty of Science & Engineering -->
+    <h4>Faculty of Science & Engineering</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Program</th>
+                <th>Total Credit Hours</th>
+                <th>Duration (Years)</th>
+                <th>Duration (Semesters)</th>
+                <th>Per Credit Cost</th>
+                <th>Total Tuition Fee</th>
+                <th>Total Cost with Admission & Other Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Department">Pharmacy</td>
+                <td data-label="Program">B. Pharm (Hon's)</td>
+                <td data-label="Total Credit Hours">160</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,850</td>
+                <td data-label="Total Tuition Fee">456,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">495,000</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Pharmacy</td>
+                <td data-label="Program">M. Pharm (Thesis)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1.6</td>
+                <td data-label="Duration (Semesters)">3</td>
+                <td data-label="Per Credit Cost">2,500</td>
+                <td data-label="Total Tuition Fee">100,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">118,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Pharmacy</td>
+                <td data-label="Program">M. Pharm (Non-Thesis)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1.6</td>
+                <td data-label="Duration (Semesters)">3</td>
+                <td data-label="Per Credit Cost">2,500</td>
+                <td data-label="Total Tuition Fee">100,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">130,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">EEE & ECE</td>
+                <td data-label="Program">BSc. in EEE (Morning)</td>
+                <td data-label="Total Credit Hours">161</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,300</td>
+                <td data-label="Total Tuition Fee">370,300</td>
+                <td data-label="Total Cost with Admission & Other Fees">408,800</td>
+            </tr>
+            <tr>
+                <td data-label="Department">EEE & ECE</td>
+                <td data-label="Program">BSc. in EEE (Evening)</td>
+                <td data-label="Total Credit Hours">147.5</td>
+                <td data-label="Duration (Years)">3.5</td>
+                <td data-label="Duration (Semesters)">7</td>
+                <td data-label="Per Credit Cost">2,300</td>
+                <td data-label="Total Tuition Fee">339,250</td>
+                <td data-label="Total Cost with Admission & Other Fees">374,750</td>
+            </tr>
+            <tr>
+                <td data-label="Department">EEE & ECE</td>
+                <td data-label="Program">BSc. in ECE (Morning)</td>
+                <td data-label="Total Credit Hours">161</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,300</td>
+                <td data-label="Total Tuition Fee">370,300</td>
+                <td data-label="Total Cost with Admission & Other Fees">408,800</td>
+            </tr>
+            <tr>
+                <td data-label="Department">EEE & ECE</td>
+                <td data-label="Program">BSc. in ECE (Evening)</td>
+                <td data-label="Total Credit Hours">147.5</td>
+                <td data-label="Duration (Years)">3.5</td>
+                <td data-label="Duration (Semesters)">7</td>
+                <td data-label="Per Credit Cost">2,300</td>
+                <td data-label="Total Tuition Fee">339,250</td>
+                <td data-label="Total Cost with Admission & Other Fees">374,750</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Civil Engineering</td>
+                <td data-label="Program">BSc. in Civil Engineering</td>
+                <td data-label="Total Credit Hours">160.50</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,500</td>
+                <td data-label="Total Tuition Fee">401,250</td>
+                <td data-label="Total Cost with Admission & Other Fees">438,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Computer Science & Engineering</td>
+                <td data-label="Program">BSc. in CSE</td>
+                <td data-label="Total Credit Hours">156</td>
+                <td data-label="Duration (Years)">4</td>
+                <td data-label="Duration (Semesters)">8</td>
+                <td data-label="Per Credit Cost">2,500</td>
+                <td data-label="Total Tuition Fee">390,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">428,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Computer Science & Engineering</td>
+                <td data-label="Program">MSc. in CSIT (1 Year)</td>
+                <td data-label="Total Credit Hours">40</td>
+                <td data-label="Duration (Years)">1</td>
+                <td data-label="Duration (Semesters)">2</td>
+                <td data-label="Per Credit Cost">2,200</td>
+                <td data-label="Total Tuition Fee">88,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">108,500</td>
+            </tr>
+            <tr>
+                <td data-label="Department">Computer Science & Engineering</td>
+                <td data-label="Program">MSc. in CSIT (2 Years)</td>
+                <td data-label="Total Credit Hours">60</td>
+                <td data-label="Duration (Years)">2</td>
+                <td data-label="Duration (Semesters)">4</td>
+                <td data-label="Per Credit Cost">2,200</td>
+                <td data-label="Total Tuition Fee">132,000</td>
+                <td data-label="Total Cost with Admission & Other Fees">152,500</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
