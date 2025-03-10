@@ -204,7 +204,23 @@
             secondText.style.color = "white";
             secondText.innerHTML = "Explore the countless paths and opportunities that Southern University Bangladesh has to offer.";
         });
-       
+       card1.addEventListener('touchstart', () => {
+            bgVideo.style.display = "none"; 
+            main.style.backgroundImage = "url('./customediv_img.jpg')";
+            main.style.backgroundSize = "cover";
+            main.style.backgroundPosition = "center";
+            main.style.backgroundRepeat = "no-repeat";
+            secondText.style.color = "green";
+            main.style.transition = "all 0.5s";
+            secondText.innerHTML ="Experience the harmony of nature and innovation at Southern University Bangladesh’s Green Campus—where sustainability meets excellence in education."
+            
+        });
+        
+        card1.addEventListener('touchend', () => {
+            bgVideo.style.display = "block"; 
+            secondText.style.color = "white";
+            secondText.innerHTML = "Explore the countless paths and opportunities that Southern University Bangladesh has to offer.";
+        });
     </script>
 </body>
 </html>
